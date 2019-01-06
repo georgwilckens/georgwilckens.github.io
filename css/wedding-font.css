@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'wedding-line-icons';
+    src:    url('../elegant_font/fonts/wedding-line-icons.eot?a5wdtn');
+    src:    url('../elegant_font/fonts/wedding-line-icons.eot?a5wdtn#iefix') format('embedded-opentype'),
+        url('../elegant_font/fonts/wedding-line-icons.ttf?a5wdtn') format('truetype'),
+        url('../elegant_font/fonts/wedding-line-icons.woff?a5wdtn') format('woff'),
+        url('../elegant_font/fonts/wedding-line-icons.svg?a5wdtn#wedding-line-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'wedding-line-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-portrait:before {
+    content: "\e900";
+}
+.icon-icon-cake:before {
+    content: "\e901";
+}
+.icon-icon-engagement:before {
+    content: "\e902";
+}
+.icon-icon-heart:before {
+    content: "\e903";
+}
+.icon-icon-ring:before {
+    content: "\e904";
+}
+.icon-icon-separator:before {
+    content: "\e905";
+}
+
