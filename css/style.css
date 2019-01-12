@@ -169,7 +169,7 @@ legend {
     font-size: 17px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, #navbar .active > a, #navbar a:hover {
-  background-color: #f7cac9;
+  background-color: #f2bafc; /* gelb #ffec1c; #f7cac9; */
   color: #857b70; }
 
 .navbar-default .navbar-toggle {
