@@ -653,6 +653,10 @@ legend {
   width: 50%;
   opacity: 1; }
 
+.image-sidebar  {
+    width: 100%;
+    height: auto; }
+
 /*    About End
 --------------------------------------------------------------------------------------------------------*/
 /*     V.      Wedding Events
