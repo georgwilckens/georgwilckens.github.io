@@ -145,7 +145,7 @@ legend {
 /*     II.     Header
 --------------------------------------------------------------------------------------------------------*/
 .navbar-default {
-    background-color: #fff02b ; /* #f7cac9; */
+  background-color: #dd3cf2 ; /* #f7cac9; */
   border-color: #fff; }
 
 .sticky-nav::after {
@@ -160,7 +160,7 @@ legend {
 
 #navbar a {
   text-decoration: none;
-  color: #857b70;
+  color: #ffffff; /* #857b70; */
   font-size: 16px;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   text-transform: uppercase; }
