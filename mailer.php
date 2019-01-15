@@ -99,7 +99,7 @@
     $mail->FromName = "$name";
 
     //To address and name
-    $mail->addAddress("kathcuevas@gmail.com", "Falconerie");//Recipient name is optional. Remove , "Falconerie"
+    $mail->addAddress("georg.wilckens@gmail.com", "Georg Wilckens");//Recipient name is optional. Remove , "Falconerie"
 
 
     //Address to which recipient will reply
@@ -113,7 +113,7 @@
     $mail->WordWrap = 50;
     $mail->isHTML(true);
 
-    $mail->Subject = "NEW RSVP from $name";
+    $mail->Subject = "HOCHZEITSANMELDUNG von $name";
     $mail->Body = "$body";
     $mail->AltBody = "This is the plain text version of the email content";
 
