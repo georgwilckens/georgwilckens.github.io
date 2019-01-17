@@ -100,11 +100,11 @@
   //Form hide/show areas.
   $('input[name="attend"]').click(function() {
    if ($('#yes').is(':checked')) {
-    $('#guests, #rsvp_song, input[name="email"]').fadeIn();
+    $('#guests, #kids, #rsvp_song, input[name="email"]').fadeIn();
     $('#comments').attr('placeholder', 'Comments');
     $('input[name="email"]').attr('placeholder', 'E-Mail *');
    } else {
-    $('#guests, #rsvp_song, input[name="email"]').fadeOut();
+    $('#guests, #kids, #rsvp_song, input[name="email"]').fadeOut();
     $('#message').fadeIn();
     $('#message').val('').attr('placeholder', 'Regrets');
     $('input[name="guest"]').prop('checked', false);

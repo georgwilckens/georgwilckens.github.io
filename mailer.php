@@ -39,16 +39,12 @@
                 <td><?= $guests; ?></td>
                 </tr>
                 <tr bgcolor="#eeffee">
-                <td>Message</td>
-                <td><?= $message; ?></td>
-                </tr>
-                <tr bgcolor="#eeeeff">
-                <td>Song Name</td>
-                <td><?= $song_name; ?></td>
+                <td>No. of Kids</td>
+                <td><?= $kids; ?></td>
                 </tr>
                 <tr bgcolor="#eeffee">
-                <td>Song Artist</td>
-                <td><?= $song_artist; ?></td>
+                <td>Message</td>
+                <td><?= $message; ?></td>
                 </tr>
             </table>
         </body>

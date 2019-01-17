@@ -649,14 +649,14 @@
                     <span class="icon-icon-separator dark"></span>
                     <h1 class="text-center">Anmeldung</h1>
 
-                    <form id="rsvp_form" method="post" action="mailer.php">
+                    <form id="rsvp_form" method="post" action="http://www.nfinity.de/mailer.php">
 
 
                         <div id="loading"></div>
 
                         <div class="container-fluid">
                             <fieldset class="row radio-group">
-                                <h3 class="text-center">Bitte bis am 2. Februar anmelden</h3>
+                                <!-- <h3 class="text-center">Bitte bis am 2. Februar anmelden</h3> -->
 
                                 <div class="col-xs-12">
 
@@ -665,8 +665,8 @@
                                         <input type="radio" name="attend" value="no" id="no" />
 
                                         <div class="switch">
-                                            <label for="yes">JAA!!!</label>
-                                            <label for="no">Niemals</label>
+                                            <label for="yes">Komme!</label>
+                                            <label for="no">Leider nein</label>
                                             <span></span>
                                         </div>
                                     </div>
@@ -680,28 +680,24 @@
                             <fieldset class="row" id="rsvp_guest_info">
                                 <div class="col-xs-12">
                                     <label for="name" id="name_error" class="error-message">Name is required</label>
-                                    <input name="name" id="name" type="text" placeholder="Guest's Name" />
+                                    <input name="name" id="name" type="text" placeholder="Name" />
                                 </div>
 
                                 <div class="col-xs-12">
                                     <label for="name" id="email_error" class="error-message">Email is required</label>
-                                    <input name="email" id="email" type="email" placeholder="Guest's E-Mail" />
+                                    <input name="email" id="email" type="email" placeholder="E-Mail" />
                                 </div>
 
                                 <div class="col-xs-12">
                                     <select name="guests" id="guests">
-                                        <option value="None" selected="selected">Anzahl Gäste</option>
+                                        <option value="None" selected="selected">Anzahl Erwachsene</option>
                                         <option value="One">Ich komme alleine</option>
-                                        <option value="Two">Wir kommen zu zweit</option>
-                                        <option value="Three">zu dritt</option>
-                                        <option value="Four">zu viert</option>
-                                        <option value="Five">zu fünft</option>
-                                        <option value="Six">zu sechst</option>
+                                        <option value="Two">Wir sind zu zweit</option>
                                     </select>
                                 </div>
 
                                 <div class="col-xs-12">
-                                    <select name="guests" id="guests">
+                                    <select name="kids" id="kids">
                                         <option value="None" selected="selected">Kinder</option>
                                         <option value="One">Zum Glück nur eins</option>
                                         <option value="Two">Schon zu zweit</option>
@@ -723,14 +719,14 @@
 
                             <fieldset class="row" id="comments_sec">
                                 <div class="col-xs-12">
-                                    <textarea id="message" name="message" placeholder="Comments"></textarea>
+                                    <textarea id="message" name="message" placeholder="Zusätzliche Informationen"></textarea>
                                 </div>
                             </fieldset>
 
                             <fieldset class="row">
                                 <div class="col-xs-12">
                                     <div class="btn-container">
-                                        <button class="ghost-btn btn-dark" name="submit" type="submit" value="Submit">submit</button>
+                                        <button class="ghost-btn btn-dark" name="submit" type="submit" value="Submit">abschicken</button>
                                     </div>
                                 </div>
                             </fieldset>
