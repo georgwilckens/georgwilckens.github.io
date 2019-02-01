@@ -145,7 +145,7 @@ legend {
 /*     II.     Header
 --------------------------------------------------------------------------------------------------------*/
 .navbar-default {
-  background-color: #dd3cf2 ; /* #f7cac9; */
+  background-color: #da70d6 ; /* #dd3cf2 ; */ /* #f7cac9; */
   border-color: #fff; }
 
 .sticky-nav::after {
