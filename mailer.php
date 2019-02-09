@@ -9,8 +9,8 @@
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $guests = $_POST["guests"];
         $attend = $_POST["attend"];
-        $song_name = trim($_POST["song_name"]);
-        $song_artist = trim($_POST["song_artist"]);
+//        $song_name = trim($_POST["song_name"]);
+//        $song_artist = trim($_POST["song_artist"]);
         $message = trim($_POST["message"]);
 
 

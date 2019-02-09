@@ -106,7 +106,7 @@
    } else {
     $('#guests, #kids, #rsvp_song, input[name="email"]').fadeOut();
     $('#message').fadeIn();
-    $('#message').val('').attr('placeholder', 'Regrets');
+    $('#message').val('').attr('placeholder', 'Nachricht');
     $('input[name="guest"]').prop('checked', false);
     $('#rsvp_guest_info input[type="text"], #rsvp_guest_info input[type="email"], #rsvp_song input[type="text"]').val('');
    }
