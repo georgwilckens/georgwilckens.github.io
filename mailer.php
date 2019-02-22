@@ -7,7 +7,8 @@
         $name = strip_tags(trim($_POST["name"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $guests = $_POST["guests"];
+        $kids = $_POST["kids"];
+//        $guests = $_POST["guests"];
         $attend = $_POST["attend"];
 //        $song_name = trim($_POST["song_name"]);
 //        $song_artist = trim($_POST["song_artist"]);
@@ -23,27 +24,23 @@
         <body>
             <table width="550" border="1" cellspacing="2" cellpadding="2">
                 <tr bgcolor="#eeffee">
-                <td>Attending</td>
+                <td>Kommt</td>
                 <td><?= $attend; ?></td>
                 </tr>
                 <tr bgcolor="#eeeeff">
-                <td>Name</td>
+                <td>Namen</td>
                 <td><?= $name; ?></td>
                 </tr>
                 <tr bgcolor="#eeffee">
                 <td>Email</td>
                 <td><?= $email; ?></td>
                 </tr>
-                <tr bgcolor="#eeeeff">
-                <td>No. of Guests</td>
-                <td><?= $guests; ?></td>
-                </tr>
                 <tr bgcolor="#eeffee">
-                <td>No. of Kids</td>
+                <td>Kinder</td>
                 <td><?= $kids; ?></td>
                 </tr>
                 <tr bgcolor="#eeffee">
-                <td>Message</td>
+                <td>Nachricht</td>
                 <td><?= $message; ?></td>
                 </tr>
             </table>
@@ -91,8 +88,11 @@
     $mail = new PHPMailer;
 
     //From email address and name
-    $mail->From = "$email";
-    $mail->FromName = "$name";
+    if (empty($email)) {
+      $mail->From = "Hochzeitsabsage <absage@angigeorg.ch>";
+    } else {
+      $mail->From = "$email";
+    }
 
     //To address and name
     $mail->addAddress("georg.wilckens@gmail.com", "Georg Wilckens");//Recipient name is optional. Remove , "Falconerie"
@@ -117,7 +117,7 @@
             echo "Mailer Error: " . $mail->ErrorInfo;
         }
         else {
-            echo "Message has been sent successfully";
+            echo "Nachricht erfolgreich abgeschickt";
         }
     }
     else {

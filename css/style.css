@@ -26,7 +26,7 @@
   background: url(../images/halftone.png); }
 
 .heartbeat:not(:required):after, .heartbeat:not(:required):before {
-  background: #f7cac9; }
+  background: #da70d6; }
 
 /*    I.      Defaul Selectors
 --------------------------------------------------------------------------------------------------------*/
@@ -76,7 +76,7 @@ h6 {
   line-height: 16px; }
 
 a, a:hover, a:focus {
-  color: #f7cac9;
+  color: #da70d6;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s color linear; }
@@ -145,7 +145,7 @@ legend {
 /*     II.     Header
 --------------------------------------------------------------------------------------------------------*/
 .navbar-default {
-  background-color: #da70d6 ; /* #dd3cf2 ; */ /* #f7cac9; */
+  background-color: #da70d6 ; /* #dd3cf2 ; */ /* #fff68f; */
   border-color: #fff; }
 
 .sticky-nav::after {
@@ -169,7 +169,7 @@ legend {
     font-size: 17px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, #navbar .active > a, #navbar a:hover {
-  background-color: #f2bafc; /* gelb #ffec1c; #f7cac9; */
+  background-color: #f2bafc; /* gelb #ffec1c; #f2bafc; */
   color: #857b70; }
 
 .navbar-default .navbar-toggle {
@@ -239,7 +239,7 @@ legend {
 .header h1 {
   text-align: center; }
 
-.hero:before, #gifts:before {
+.hero:before/* , #gifts:before */ {
   position: absolute;
   content: '';
   width: 100%;
@@ -315,7 +315,7 @@ legend {
   opacity: 1 !important; }
 
 .btn-dark:hover {
-  background: #f7cac9;
+  background: #f2bafc;
   color: #fff; }
 
 .intro-content {
@@ -487,15 +487,15 @@ legend {
     font-size: 16px; }
 
 .timeline .article.first {
-  border-top: 1px solid #f7cac9; }
+  border-top: 1px solid #f2bafc; }
 .timeline .article {
   padding: 10px 0 20px;
-  border-bottom: 1px solid #f7cac9;
+  border-bottom: 1px solid #f2bafc;
   transition: color 0.2s ease 0s, background 0.2s ease 0s;
   cursor: pointer; }
   .timeline .article:hover, .timeline .article:active {
     border-color: #ddd;
-    background: #f7cac9; }
+    background: #f2bafc; }
     .timeline .article:hover h2 a, .timeline .article:active h2 a {
       -webkit-transition: color 0.2s ease 0s, background 0.2s ease 0s;
       color: #fff; }
@@ -514,13 +514,14 @@ legend {
   font-weight: bold;
   float: left;
   line-height: 1.2em;
-  color: #f7cac9;
+  color: #f2bafc;
   margin-right: 20px; }
 
 .about {
   overflow: hidden; }
   .about .card {
     padding: 40px 20px 30px;
+    margin: 0px 0px 20px;
     border: 1px solid #f8f8f8;
     background: #fff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -572,6 +573,14 @@ legend {
     display: inline-block;
     max-width: 60%; }
 
+.nomoveme.card:hover{
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+
 .page-home-about {
   position: relative;
   z-index: 1; }
@@ -584,11 +593,13 @@ legend {
   text-align: center; }
 
 .text-container {
-  width: 50%;
-  max-width: 850px;
-  max-width: 53.125rem;
-  padding: 20px 10px 40px 40px;
-  padding: 1.25rem .625rem 2.5rem 2.5rem;
+  width: 100%;
+  /* max-width: 850px; */
+  /* max-width: 53.125rem; */
+  /* padding: 20px 10px 40px 40px; */
+  /* padding: 1.25rem 0.625rem 2.5rem 2.5rem; */
+  padding: 20px 40px 40px 40px;
+  padding: 1.25rem 2.5rem 2.5rem 2.5rem;
   text-align: left; }
 
 .text-container .main-title {
@@ -689,7 +700,7 @@ legend {
   font-size: 60px; }
 
 .colored-bg {
-  background: #f7cac9;
+  background: #f2bafc;
   color: #6a6a6a; }
   .colored-bg .num {
     font-family: Lato;
@@ -950,39 +961,39 @@ legend {
 --------------------------------------------------------------------------------------------------------*/
 /*    VI.     Gifts
 --------------------------------------------------------------------------------------------------------*/
-#gifts {
-  background-image: url("http://placehold.it/1800x1200");
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-attachment: fixed; }
-  #gifts .row {
-    position: relative;
-    z-index: 2; }
-  #gifts img {
-    -webkit-filter: brightness(0) invert(1);
-    filter: brightness(0) invert(1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    -webkit-transform: translateY(-50%) translateX(-50%);
-    -moz-transform: translateY(-50%) translateX(-50%); }
-  #gifts h1 {
-    color: #fff;
-    margin-bottom: 80px; }
-  #gifts li {
-    padding: 0 20px; }
-  #gifts .ghost-btn {
-    background: transparent;
-    height: 50px;
-    display: block;
-    width: 130px;
-    height: 50px;
-    text-align: center;
-    position: relative; }
+/* #gifts { */
+/*   background-image: url("http://angigeorg.ch/images/georgundangi.jpg"); */
+/*   position: relative; */
+/*   background-repeat: no-repeat; */
+/*   background-position: center right; */
+/*   background-size: cover; */
+/*   -webkit-background-size: cover; */
+/*   background-attachment: fixed; } */
+/*   #gifts .row { */
+/*     position: relative; */
+/*     z-index: 2; } */
+/*   #gifts img { */
+/*     -webkit-filter: brightness(0) invert(1); */
+/*     filter: brightness(0) invert(1); */
+/*     position: absolute; */
+/*     top: 50%; */
+/*     left: 50%; */
+/*     transform: translateY(-50%) translateX(-50%); */
+/*     -webkit-transform: translateY(-50%) translateX(-50%); */
+/*     -moz-transform: translateY(-50%) translateX(-50%); } */
+/*   #gifts h1 { */
+/*     color: #fff; */
+/*     margin-bottom: 80px; } */
+/*   #gifts li { */
+/*     padding: 0 20px; } */
+/*   #gifts .ghost-btn { */
+/*     background: transparent; */
+/*     height: 50px; */
+/*     display: block; */
+/*     width: 130px; */
+/*     height: 50px; */
+/*     text-align: center; */
+/*     position: relative; } */
 
 .quotes blockquote {
   border: none; }
@@ -1023,7 +1034,7 @@ button, input[type=submit] {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  background: #f7cac9;
+  background: #f2bafc;
   border: 0; }
 
 input[type="text"], input[type="email"], select, textarea {
@@ -1067,7 +1078,7 @@ input[type="text"], input[type="email"], select, textarea {
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: #f7cac9; }
+  border-color: #f2bafc; }
 
 #loading {
   position: absolute;
@@ -1194,7 +1205,7 @@ label[for=no] {
 --------------------------------------------------------------------------------------------------------*/
 .social {
   font-size: 3em;
-  color: #f7cac9; }
+  color: #f2bafc; }
   .social a:hover {
     color: #9D8C83; }
 
@@ -1218,10 +1229,10 @@ label[for=no] {
   .nav > li > a {
     padding: 9px; }
 
-  #gifts li {
-    margin-bottom: 10px; }
-  #gifts li:last-child {
-    margin-bottom: 0; } }
+  /* #gifts li { */
+  /*   margin-bottom: 10px; } */
+  /* #gifts li:last-child { */
+  /*   margin-bottom: 0; } } */
 @media screen and (min-width: 1000px) {
   .img-container:after, .img-container:before {
     content: '';
@@ -1249,3 +1260,15 @@ label[for=no] {
     left: -99.5%;
     left: calc(-100% + 5px);
     border-right: 1px solid rgba(255, 255, 255, 0.7); } }
+
+/*    X.     Georg additional
+--------------------------------------------------------------------------------------------------------*/
+
+.content.gmaps {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* border: none; */
+    /* frameborder: none; */
+    /* width: 100%; */
+    height: 500;
+}

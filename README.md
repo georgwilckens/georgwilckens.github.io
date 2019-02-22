@@ -1,10 +1,12 @@
 # Angi & Georg's wedding page
 
-## Things in need of fixing
+## Migration
+- The page has been migrated to its own server (due to the need for php Execution)
 
+## Things in need of fixing
 - Font doesn't always display properly (e.g. Firefox on Linux)
-- Remove title page image cycling
-- Anmeldeformular zu Google Sheet
-- Email Alias für Tätschmeister für Beiträge
-- Email Alias für OK
-- Persönliche Email Alias für A&G und OK
+- Consider removing title page image cycling
+- Minor cleanups
+
+## Recent color edits
+- Lachs f7cac9 -> Khaki fff68f -> helles Lila f2bafc (caution, in use at navbar background color, keep it there)

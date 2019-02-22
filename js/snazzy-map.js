@@ -2,7 +2,7 @@
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(40.672172,-73.886364),
+            center: new google.maps.LatLng(47.387860, 8.187727),
             zoom: 12,
             zoomControl: true,
             zoomControlOptions: {
@@ -93,7 +93,7 @@
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Wedding Bells Church', '1 Infinite Loop<br />Cupertino, CA 95014', 'undefined', '', '', 40.6700, -73.9400, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['After Party', '1 Infinite Loop<br />Cupertino, CA 95014', 'undefined', '', '', 40.6700,  -73.8400, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
+	    ['Wedding Bells Church', '1 Infinite Loop<br />Cupertino, CA 95014', 'undefined', '', '', 47.387860, 8.187727, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['After Party', '1 Infinite Loop<br />Cupertino, CA 95014', 'undefined', '', '', 40.6700,  -73.8400, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png']
         ];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
