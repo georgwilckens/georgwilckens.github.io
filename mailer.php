@@ -89,7 +89,7 @@
 
     //From email address and name
     if (empty($email)) {
-      $mail->From = "Hochzeitsabsage <absage@angigeorg.ch>";
+      $mail->From = "absage@angigeorg.ch";
     } else {
       $mail->From = "$email";
     }
